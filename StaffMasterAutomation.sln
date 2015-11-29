@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffMasterAutomation", "StaffMasterAutomation\StaffMasterAutomation.csproj", "{D38000F0-4563-444A-BA31-E4915D35A264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffMasterTests", "StaffMasterTests\StaffMasterTests.csproj", "{FF2B97E6-8471-4DD9-AE3B-7F151F7D0467}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC01016A-4F03-4946-89BE-C35DEE9AE5EE}"
+	ProjectSection(SolutionItems) = preProject
+		addon\firebug-2.0.13-fx.xpi = addon\firebug-2.0.13-fx.xpi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D38000F0-4563-444A-BA31-E4915D35A264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38000F0-4563-444A-BA31-E4915D35A264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38000F0-4563-444A-BA31-E4915D35A264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38000F0-4563-444A-BA31-E4915D35A264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2B97E6-8471-4DD9-AE3B-7F151F7D0467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2B97E6-8471-4DD9-AE3B-7F151F7D0467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2B97E6-8471-4DD9-AE3B-7F151F7D0467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2B97E6-8471-4DD9-AE3B-7F151F7D0467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

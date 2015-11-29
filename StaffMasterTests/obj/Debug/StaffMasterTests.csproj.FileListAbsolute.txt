@@ -1,0 +1,11 @@
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\StaffMasterTests.dll
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\StaffMasterTests.pdb
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\StaffMasterAutomation.dll
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\WebDriver.dll
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\StaffMasterAutomation.pdb
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\WebDriver.xml
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\obj\Debug\StaffMasterTests.csprojResolveAssemblyReference.cache
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\obj\Debug\StaffMasterTests.dll
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\obj\Debug\StaffMasterTests.pdb
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\WebDriver.Support.dll
+D:\Projects\ServiceNow\StaffMaster\StaffMasterAutomation\StaffMasterTests\bin\Debug\WebDriver.Support.xml
