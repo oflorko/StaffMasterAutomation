@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffMasterAutomation", "St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffMasterTests", "StaffMasterTests\StaffMasterTests.csproj", "{FF2B97E6-8471-4DD9-AE3B-7F151F7D0467}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC01016A-4F03-4946-89BE-C35DEE9AE5EE}"
-	ProjectSection(SolutionItems) = preProject
-		addon\firebug-2.0.13-fx.xpi = addon\firebug-2.0.13-fx.xpi
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
