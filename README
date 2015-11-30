@@ -1,0 +1,120 @@
+Short overview
+
+This project was created using C# and Selenium framework.
+Due to time limits I put more effort into creation of framework itself and smoke tests for basic functionality.
+The following approach was used:
+- If tests are difficult to maintain and run, they will never be maintained and executed
+- It is better to make tests as simple to read as possible
+- Tests never call System Under Test directly, tests call framework, and only framework call SUT, that is why there is no Selenium.Driver instance in the tests
+Tests -> Framework -> Selenium -> SUT
+
+
+How to open and run tests
+
+1. You need a Visual Studio installed (project was created on VS 2103). You can get it here:
+https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx
+To download VS 2013: https://go.microsoft.com/fwlink/?LinkId=532495&clcid=0x409
+2. Open Visual Studio, then File -> Open -> Project/Solution and select StaffMasterAutomation.sln (https://github.com/oflorko/StaffMasterAutomation/blob/master/StaffMasterAutomation.sln)
+3. Select Test -> Run -> All tests
+	This will open a Test Explorer with list of all tests created. To find the Test Explorer please select Test -> Window -> Test Explorer
+
+
+Framework Structure
+
+Selenium - folder that contains classes that related to Selenium. In our case there Initialization and Close methods, also there is a property with baseUrl 
+TODO: If there are different environments baseUrl should be moved to a .config file
+
+Pages - classes with sets of methods for every page of our application are located here. To make tests more readable was decided to use nested classes, so here is an example of login test:
+LoginPage.LoginAs("admin").WithPasword("admin").Login();
+In this example we can see that there is a static class that describes login page with set of methods related to actions that can be done on the login page.
+
+Navigation - there are elements in our test application that are common for different pages, eg. menu on the top of screen, also both brunch and staff has the same set of buttons (View, Edit, Delete). Such components is reasonable to move to a separate classes to avoid code duplication. 
+
+
+Base Test
+
+Tests are separated from the framework to a different project. 
+
+All methods that have to be executed for all tests are located in a BaseTest class:
+- Initialization on Webdriver
+- Login
+- Closing of Browser
+
+
+Smoke tests
+
+Within this task and time limits I concentrated only on Smoke tests creation. Tests that were not created are listed in TODO sections.
+
+Login:
+1. Go to http://127.0.0.1:8080/#/login/
+2. Input login and password: admin/admin
+3. Press login button
+Expected: Home page is loaded with message “Welcome to Gurukula”
+TODO: Login with wrong password OR/AND username
+ 
+Branches tests:
+Create a new brunch:
+1. Login
+2. Click on Entities button
+3. Select Branches
+4. Press ‘Create new branch’ button
+5. Fill fields with proper data
+6. Press Save
+Expected result: New branch should be listed with relevant data
+
+View a branch:
+1. Login
+2. GoTo Entities -> Branches
+3. Click on View button
+Expected: Page for selected branch is opened, all fields are relevant
+
+Search for a branch:
+1. Login
+2. GoTo Entities -> Branches
+3. Fill text to search
+4. Press Search button
+Expected: Listed only data that matches the search criteria
+
+TODO: Test for Branch edit
+Test for branch delete
+
+Staff test:
+Create a new staff:
+1. Login
+2. Click on Entities button
+3. Select staffs
+4. Press ‘Create new staff’ button
+5. Fill fields with proper data
+6. Press Save
+Expected result: New staff should be listed with relevant data
+
+View a staff:
+1. Login
+2. GoTo Entities -> staffs
+C3.lick on View button
+Expected: Page for selected staff is opened, all fields are relevant
+
+Search for a staff:
+1. Login
+2. GoTo Entities -> Staffs
+3. Fill text to search
+4. Press Search button
+Expected: Listed only data that matches the search criteria
+
+TODO: Test for Staff edit
+Test for Staff delete
+
+Logout:
+TODO: Logout test:
+1. Press logout button
+Expected: “Click here to login” is on the screen. Entities menu is not available
+
+Entities are not available:
+1. Try to follow the link http://${baseURL}/#/branch
+Expected: Authentication screen
+
+Account Tests:
+TODO: Add new account and login with it
+Change settings for the account
+Change password
+View sessions
